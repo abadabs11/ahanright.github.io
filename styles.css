@@ -1,0 +1,478 @@
+html{
+    font-size: 100%;
+}
+body{
+    margin: 0;
+}
+
+h1{
+	font-family: zooja-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 10rem;
+	letter-spacing: .15rem;
+	line-height: 9.25rem;
+    color: #fff;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.70);
+    margin: 0 0 2.25rem 0;
+}
+h2{
+	font-family: proxima-nova;
+    font-weight: 300;
+	font-size: 2.25rem;
+	letter-spacing: .05rem;
+    font-style: italic;
+    color: #fff;
+    margin: 0;
+}
+h3{
+	font-family: zooja-pro, sans-serif;
+    font-weight: 300;
+	font-size: 6.25rem;
+	letter-spacing: .15rem;
+	line-height: 3.5rem;
+	margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.60);
+}
+.invite h3{
+    margin-top: -4rem;
+}
+h3#red{
+    color: #550F1D;
+    text-shadow: none;
+}
+h4{
+	font-family: proxima-nova;
+    font-weight: 600;
+	font-size: 1.45rem;
+	/*letter-spacing: .10rem;*/
+    margin: 0;
+    /*text-transform: uppercase;*/
+    color: #0e1842;
+}
+
+p{
+    font-family: proxima-nova;
+    font-weight: 200;
+    font-size: 1.15rem;
+    color: #0A1029;
+    letter-spacing: 0.02rem;
+    line-height: 2rem;
+}
+p#about-content{
+    font-family: proxima-nova;
+    font-weight: 200;
+    font-size: 1.625rem;
+    color: #fff;
+    line-height: 2.5rem;
+    margin-bottom: 6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.header{
+    height: 100%;
+    background-image: url("images/header-bg.png");
+    background-size: cover;
+    background-position: 100% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.countdown{
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999999;
+}
+div#time{
+    font-family: proxima-nova;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+p.small-script{
+    font-family: zooja-pro;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: .35rem 0;
+}
+/*.top{*/
+    /*top: 1rem;*/
+    /*top: 0;*/
+/*}*/
+
+
+.navigation{
+    font-family: proxima-nova;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    letter-spacing: 0.125rem;
+    display: flex;
+    padding: 1.5rem 0 1.75rem 10%;
+    z-index: 9999;
+    color: #fff;
+    box-shadow: 0 -2px 26px 0 rgba(0,0,0,0.60);
+}
+.navigation a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation ul{
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+
+.navigation li{
+    margin-right: 2.3rem;
+}
+
+.navigation li:first-child{
+    list-style: none;
+}
+
+.fixed-nav {
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
+}
+
+.active-about{
+    background-color: #550F1D;
+}
+.active-faq{
+    background-color: #729EA1;
+}
+.active-rsvp{
+    background-color: #0E1842;
+}
+
+/*a#about-nav {
+    border-bottom: 5px #fff solid;
+}
+a#faq-nav {
+    border-bottom: 5px #0E1842 solid;
+}
+a#rsvp-nav {
+    border-bottom: 5px #550F1D solid;
+}*/
+
+.active-about a:hover {
+    border-bottom: 4px #fff solid;
+}
+.active-faq a:hover {
+    border-bottom: 4px #0E1842 solid;
+}
+.active-rsvp a:hover {
+    border-bottom: 4px #550F1D solid;
+}
+
+.active-about #about-nav{
+    border-bottom: 4px #fff solid;
+}
+.active-faq #faq-nav{
+    border-bottom: 4px #0E1842 solid;
+}
+.active-rsvp #rsvp-nav{
+    border-bottom: 4px #550F1D solid;
+}
+
+
+.about{
+    background-color: #550F1D;
+    display: flex;
+    padding: 10rem 6rem 6rem 12rem;
+}
+.about-image{
+    width: 50%;
+}
+.about-image img{
+    width: 100%;
+}
+.about-content{
+    width: 50%;
+    text-align: center;
+    padding-top: 6%;
+}
+.invite{
+    margin-bottom: 8rem;
+}
+
+
+.faq{
+    padding: 6rem 8% 6rem 10%;
+    display: flex;
+    flex-direction: column;
+}
+.faq-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.faq-content{
+    width: 48%;
+}
+.faq-img{
+    width: 48%;
+    padding-top: 1rem;
+}
+.faq-img img{
+    width: 100%;
+}
+.faq-img img#small {
+    width: 90%
+}
+.faq p{
+    display: flex;
+}
+
+
+li#a{
+    padding-left: 2.75rem;
+}
+li#q span{
+    font-family: zooja-pro, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #550F1D;
+    margin-right: .75rem;
+}
+li#a span{
+    font-family: zooja-pro, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #729EA1;
+    margin-right: .75rem;
+}
+
+
+
+.rsvp{
+    background-color: #0E1842;
+    height: 100%;
+    padding: 16rem 10% 0 10%;
+    text-align: center;
+    background-image: url("images/bottom-banner.png");
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.rsvp-content h3{
+    margin-bottom: 4rem;
+}
+
+#primaryname{
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 26px 8px #0A1029;
+    border-radius: 10px;
+    width: 100%;
+    height: 5rem;
+    border: none;
+    font-family: proxima-nova;
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+#primaryname::placeholder{
+    font-style: italic;
+    color: #595959;
+}
+#primaryname:focus{
+    outline: none;
+}
+#formstart{
+    display: flex;
+}
+.enter-button{
+    background-color: #729EA1;
+    box-shadow: 0 2px 14px 0 rgba(10,16,41,0.30);
+    border-radius: 10px;
+    padding: 1rem;
+    height: 90%;
+    margin-left: -8.5rem;
+    margin-top: .6rem;
+    border: none;
+}
+.enter-button:hover{
+    cursor: pointer;
+    background-color: #518386;
+}
+
+
+#form-modals{
+    background-color: #fff;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.70);
+    border-radius: 2px;
+    position: fixed;
+    display: none;
+    /*flex-direction: column;*/
+    padding: 6rem 2rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 53rem;
+}
+#question1{
+    display: none;
+}
+#question2a{
+    display: none;
+}
+#question2b{
+    display: none;
+}
+#question3a{
+    display: none;
+}
+#question3b{
+    display: none;
+}
+#question4{
+    display: none;
+}
+#question5{
+    display: none;
+}
+#question6{
+    display: none;
+}
+
+
+.form-buttons{
+    display: flex;
+    justify-content: center;
+}
+.form-buttons .individual-button:first-child{
+    margin-right: 20px;
+}
+.individual-button input {
+    width: 230px;
+    height: 80px;
+    position: absolute;
+    opacity: 0;
+}
+.individual-button input:hover{
+    cursor: pointer;
+}
+.individual-button{
+    background-color: #fff;
+    border: 2px solid #729EA1;
+    border-radius: 10px;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-size: 24px;
+    color: #729EA1;
+    text-align: center;
+    width: 230px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.individual-button:hover{
+    background-color: #729EA1;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.form-buttons #submit-button{
+    background-color: #fff;
+    border: 2px solid #729EA1;
+    border-radius: 10px;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-size: 24px;
+    color: #729EA1;
+    text-align: center;
+    width: 230px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-buttons  #submit-button:hover{
+    background-color: #729EA1;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-buttons #formstart{
+    width: 80%;
+}
+.form-buttons #primaryname{
+    box-shadow: 0 5px 26px 6px rgba(10,16,41,0.15);
+}
+.form-buttons .enter-button{
+    height: 75%;
+}
+
+
+
+/*#question2{
+    width: 850px;
+    height: 520px;
+    background-color: gray;
+    display: none;
+}
+#question3{
+    width: 850px;
+    height: 520px;
+    background-color: red;
+    display: none;
+}*/
+
+
+
+/*.body-copy ul {
+    padding-left: 1.85rem;
+    margin-top: 0;
+}
+.body-copy li{
+    list-style-type: none;
+}
+.body-copy li::before {
+    color: #E54B4B;
+    content: "\2022";
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    margin-left: -1.85rem;
+}
+li.indent {
+    margin-left: 2.5rem;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 81.25rem) {
+}
+@media (max-width: 37.5rem){   
+}
+@media (max-width: 54.25rem) and (min-width:37.5rem){  
+}
+@media screen and (max-width: 59.75rem) {
+}
