@@ -66,7 +66,7 @@ p#about-content{
     font-size: 1.625rem;
     color: #fff;
     line-height: 2.5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 a{
@@ -103,9 +103,10 @@ div#time{
 p.small-script{
     font-family: zooja-pro;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 300;
-    margin: .35rem 0;
+    margin: .25rem 0;
+    letter-spacing: .05rem;
 }
 /*.top{*/
     /*top: 1rem;*/
@@ -298,13 +299,18 @@ li#a span{
 }
 .enter-button{
     background-color: #729EA1;
-    box-shadow: 0 2px 14px 0 rgba(10,16,41,0.30);
+    box-shadow: 0 -2px 26px 0 rgba(0,0,0,0.60);
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     height: 90%;
-    margin-left: -8.5rem;
     margin-top: .6rem;
     border: none;
+    font-family: proxima-nova;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    letter-spacing: 0.125rem;
+    color: #fff;
 }
 .enter-button:hover{
     cursor: pointer;
