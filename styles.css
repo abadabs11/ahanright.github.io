@@ -199,6 +199,9 @@ a#rsvp-nav {
 }
 .about-image{
     width: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
 }
 .about-image img{
     width: 100%;
@@ -229,6 +232,8 @@ a#rsvp-nav {
 .faq-img{
     width: 48%;
     padding-top: 1rem;
+    display: flex;
+    align-items: center;
 }
 .faq-img img{
     width: 100%;
@@ -264,15 +269,21 @@ li#a span{
 .rsvp{
     background-color: #0E1842;
     height: 100%;
-    padding: 16rem 10% 0 10%;
+    /*padding: 16rem 10% 0 10%;*/
     text-align: center;
     background-image: url("images/bottom-banner.png");
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.rsvp-content{
+    padding-top: 11rem;
+}
 .rsvp-content h3{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+}
+.rsvp-content p{
+    margin-bottom: 3rem !important;
 }
 
 #primaryname{
@@ -302,7 +313,7 @@ li#a span{
     box-shadow: 0 -2px 26px 0 rgba(0,0,0,0.60);
     border-radius: 10px;
     padding: 1rem 1.5rem;
-    height: 90%;
+    /*height: 90%;*/
     margin-top: .6rem;
     border: none;
     font-family: proxima-nova;
@@ -430,55 +441,45 @@ li#a span{
 
 
 
-/*#question2{
-    width: 850px;
-    height: 520px;
-    background-color: gray;
-    display: none;
+
+.small-screen {
+    background-color: #0E1842;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    flex-direction: column;
 }
-#question3{
-    width: 850px;
-    height: 520px;
-    background-color: red;
-    display: none;
-}*/
 
-
-
-/*.body-copy ul {
-    padding-left: 1.85rem;
-    margin-top: 0;
+.small-screen p{
+    font-family: proxima-nova;
+    font-weight: 200;
+    font-size: 1.75rem;
+    color: #fff;
+    line-height: 2.5rem;
+    text-align: center;
 }
-.body-copy li{
-    list-style-type: none;
+
+p.script {
+    font-family: zooja-pro, sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: .15rem;
+    margin-bottom: 1rem;
 }
-.body-copy li::before {
-    color: #E54B4B;
-    content: "\2022";
-    font-size: 1.5rem;
-    padding-right: 1rem;
-    margin-left: -1.85rem;
+
+
+
+
+@media (min-width: 65rem) {
+    .small-screen{display: none;}
+    .large-screen{display: block;}
 }
-li.indent {
-    margin-left: 2.5rem;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 81.25rem) {
+@media (max-width: 65rem){
+    .small-screen{display: flex;}  
+    .large-screen{display: none;} 
 }
-@media (max-width: 37.5rem){   
-}
-@media (max-width: 54.25rem) and (min-width:37.5rem){  
+@media (max-width: 54.25rem) and (min-width:37.5rem){ 
+
 }
 @media screen and (max-width: 59.75rem) {
 }

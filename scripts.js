@@ -1,57 +1,3 @@
-// FORM
-
-var primaryname, response, guest;
-function _(x){
-  return document.getElementById(x);
-}
-function processFormStart(){
-  primaryname = _("primaryname").value;
-  if(primaryname.length > 2){
-    _("form-modals").style.display = "block";
-    _("question1").style.display = "block";
-  } else {
-      alert("Please enter your full name"); 
-  }
-}
-function processQuestion2a(){
-    _("question1").style.display = "none";
-    _("question2a").style.display = "block";
-}
-function processQuestion2b(){
-    _("question1").style.display = "none";
-    _("question2b").style.display = "block";
-}
-function processQuestion3b(){
-    _("question2a").style.display = "none";
-    _("question3b").style.display = "block";
-}
-function processQuestion3a(){
-    _("question2a").style.display = "none";
-    _("question3b").style.display = "none";
-    _("question3a").style.display = "block";
-}
-function processQuestion4(){
-    _("question3a").style.display = "none";
-    _("question4").style.display = "block";
-}
-function processQuestion5(){
-    _("question4").style.display = "none";
-    _("question5").style.display = "block";
-}
-function processQuestion6(){
-    _("question5").style.display = "none";
-    _("question6").style.display = "block";
-}
-
-
-function submitForm(){
-  _("rsvpform").method = "post";
-  _("rsvpform").action = "rsvpform.php";
-  _("rsvpform").submit();
-}
-
-
-
 // NAVIGATION
 
 $(window).scroll(function(){
@@ -91,13 +37,13 @@ $("#about-nav").click(function () {
        $(".navigation").removeClass('active-faq');
        $(".navigation").removeClass('active-rsvp');
       }
-      else if(scroll > 2200 && scroll < 5800){
+      else if(scroll > 2200 && scroll < 5300){
        $("a").removeClass('active-faq');
        $(".navigation").addClass('active-faq');
        $(".navigation").removeClass('active-about');
        $(".navigation").removeClass('active-rsvp');
       }
-      else if(scroll > 5800 && scroll < 6200){
+      else if(scroll > 5300 && scroll < 6200){
        $("a").removeClass('active-rsvp');
        $(".navigation").addClass('active-rsvp');
        $(".navigation").removeClass('active-faq');
@@ -130,7 +76,7 @@ setTimeout("countdownTimer("+seconds+")",999);
 }
 }
 //var target_date = new Date(year,month,day,hour,minutes,seconds).getTime();
-var target_date = new Date(2021,4,24,15,30,00).getTime();
+var target_date = new Date(2021,3,24,15,30,00).getTime();
 var current_date = new Date().getTime(); 
 var seconds_left = (target_date - current_date) / 1000;
 countdownTimer(seconds_left);   
