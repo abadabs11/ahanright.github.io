@@ -72,6 +72,9 @@ p#about-content{
 a{
     text-decoration: none;
 }
+.italic{
+    font-style: italic;
+}
 
 
 .header{
@@ -242,7 +245,7 @@ a#rsvp-nav {
     width: 90%
 }
 .faq p{
-    display: flex;
+    /*display: flex;*/
 }
 
 
