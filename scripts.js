@@ -76,7 +76,7 @@ setTimeout("countdownTimer("+seconds+")",999);
 }
 }
 //var target_date = new Date(year,month,day,hour,minutes,seconds).getTime();
-var target_date = new Date(2021,3,24,15,30,00).getTime();
+var target_date = new Date(2021,9,2,15,30,00).getTime();
 var current_date = new Date().getTime(); 
 var seconds_left = (target_date - current_date) / 1000;
 countdownTimer(seconds_left);   
