@@ -494,15 +494,120 @@ p.script {
 
 
 @media (min-width: 65rem) {
-    .small-screen{display: none;}
-    .large-screen{display: block;}
+    /*.small-screen{display: none;}*/
+    /*.large-screen{display: block;}*/
 }
 @media (max-width: 65rem){
-    .small-screen{display: flex;}  
-    .large-screen{display: none;} 
+    /*.small-screen{display: flex;}  */
+    /*.large-screen{display: none;} */
+    h1{
+        font-size: 7rem;
+        margin: 0 0 0.25rem 0;
+    }
+    h2{font-size: 2rem;}
+    .navigation{
+        font-size: 1.5rem;
+        padding: 1.5rem 0 1.75rem 5%;
+    }
+    .about{
+        flex-direction: column;
+        padding: 8rem 1rem 6rem 1rem;
+    }
+    .about-image{
+        display: none;
+    }
+    .about-content{
+        width: 100%;
+    }
+    .faq{
+        padding: 6rem 8%;
+    }
+    .faq-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq-content{
+        width: 90%;
+    }
+    .faq-img{
+        width: 65%;
+    }
+    .faq-section#reverse{
+        flex-direction: column-reverse;
+    }
+    .rsvp{
+        height: auto;
+    }
+    .rsvp-content {
+        padding-top: 14rem;
+        padding-bottom: 26rem;
+    }
 }
-@media (max-width: 54.25rem) and (min-width:37.5rem){ 
+/*@media (max-width: 54.25rem) and (min-width:37.5rem){ 
 
-}
+}*/
 @media screen and (max-width: 59.75rem) {
+    .header{
+        padding-left: 0;
+    }
+    h1{
+        font-size: 5rem;
+        margin: 3rem 0 0.5rem 0;
+        text-align: center;
+        line-height: 5.25rem;
+    }
+    h2{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    h3{
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    p#about-content{
+        font-size: 1.5rem;
+    }
+    .navigation{
+        font-size: 1rem;
+        padding: 1.5rem 0 1.75rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .navigation li{
+        margin-right: 1.5rem;
+    }
+    .navigation li#last{
+        margin-right: 0;
+    }
+    .invite h3{
+        margin-top: -3.5rem;
+        font-size: 6.25rem;
+        line-height: 6.5rem;
+    }
+    .invite{
+        margin-bottom: 5rem;
+    }
+    .countdown{
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        width: 100%;
+    }
+    /*.faq-img{
+        display: none;
+    }*/
+    .faq-section#reverse{
+        margin-top: -1rem;
+    }
+    .rsvp-content{
+        padding: 6rem 2rem 12rem 2rem;
+    }
+
 }

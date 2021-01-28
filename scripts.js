@@ -53,6 +53,30 @@ $("#about-nav").click(function () {
   });
 
 
+// $(document).ready(function(){
+//     $(window).scroll(function (event) {
+//       var scroll = $(window).scrollTop();
+//       if(scroll < 2200){
+//        $("a").removeClass('active-about');
+//        $(".navigation").addClass('active-about');
+//        $(".navigation").removeClass('active-faq');
+//        $(".navigation").removeClass('active-rsvp');
+//       }
+//       else if(scroll > 2200 && scroll < 7200){
+//        $("a").removeClass('active-faq');
+//        $(".navigation").addClass('active-faq');
+//        $(".navigation").removeClass('active-about');
+//        $(".navigation").removeClass('active-rsvp');
+//       }
+//       else if(scroll > 7200){
+//        $("a").removeClass('active-rsvp');
+//        $(".navigation").addClass('active-rsvp');
+//        $(".navigation").removeClass('active-faq');
+//        $(".navigation").removeClass('active-about');
+//       }
+//     });
+//   });
+
 
 
 
